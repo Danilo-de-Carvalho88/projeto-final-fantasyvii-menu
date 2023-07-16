@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .cabecalho .logo {
         max-width: 190px;
     }
@@ -37,4 +37,40 @@
         font-size: 16px;
         margin: 20px auto;
     }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .selecao-de-personagens .lista-de-personagens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .selecao-de-personagens .personagens .titulo {
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #47f4ff;
+        width: 233px;
+        text-align: center;
+    }
+    
+    .lista-de-personagens .personagem img {
+        width: 64px;
+        /* height: 100%; */
+    }
+    
+    .personagem-selecionado .personagem-grande {
+        width: 200px;
+        /* height: 430px; */
+    }
+    
+    .personagem-selecionado .descricao-personagem {
+        font-size: 12px;
+        /* line-height: 22px; */
+        text-align: center;
+        margin-top: 20px;
+        width: 450px;
+    }    
 }
